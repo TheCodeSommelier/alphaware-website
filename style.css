@@ -1,0 +1,129 @@
+@import 'utility_classes.css';
+
+::selection {
+  background: rgba(var(--primary-color), 0.8);
+  color: rgba(var(--font-color), 1);
+  font-weight: 700;
+}
+
+/* Navbar styling */
+#navbar {
+  width: 100%;
+  height: 120px;
+  padding: 40px 70px;
+}
+
+a {
+  color: rgba(var(--font-color), 1);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  scale: 1.2;
+  transition: 0.3s ease-in-out;
+}
+
+.logo-container {
+  background-color: grey;
+  width: 78px;
+  height: 45px;
+}
+
+.menu {
+  width: 25%;
+}
+
+/* Banner styling */
+#banner {
+  animation: slideFromBottom 1s ease-out forwards;
+  height: 700px;
+}
+
+#banner h1 {
+  margin: 30px auto;
+}
+
+h2 {
+  text-align: center;
+  line-height: 100%;
+}
+
+.fa-chevron-down {
+  color: rgba(var(--font-color), 1);
+  font-size: 50px;
+}
+
+#banner .content {
+  height: auto;
+}
+
+#banner .content a {
+  margin: 50px auto 0;
+}
+
+/* Content styling */
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.content .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  padding: 30px;
+  margin: 30px auto;
+}
+
+.footer p, .footer div {
+  display: flex;
+}
+
+.fa-phone, .fa-envelope {
+  color: rgba(var(--primary-color), 1);
+}
+
+/* Animations */
+.pop-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-out;
+}
+
+.visible {
+  animation: popInAnimation 0.5s forwards;
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(50%); /* Start from below the screen */
+    opacity: 0; /* Start from fully transparent */
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes popInAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+      transform: scale(1);
+    }
+  }
