@@ -13,6 +13,10 @@
   padding: 40px 70px;
 }
 
+img {
+  width: 80px;
+}
+
 a {
   color: rgba(var(--font-color), 1);
   text-decoration: none;
