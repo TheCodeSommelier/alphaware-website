@@ -85,14 +85,30 @@ h2 {
 .footer {
   padding: 30px;
   margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .footer p, .footer div {
   display: flex;
 }
 
+.footer div {
+  align-items: center;
+}
+
 .fa-phone, .fa-envelope {
   color: rgba(var(--primary-color), 1);
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.footer {
+  margin-right: 10px;
 }
 
 /* Animations */
