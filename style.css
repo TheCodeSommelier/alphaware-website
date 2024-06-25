@@ -13,8 +13,13 @@
   padding: 40px 70px;
 }
 
-img {
+.logo {
   width: 80px;
+  color: rgba(var(--primary-color), 1);
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Hind Madurai', sans-serif;
+  font-style: italic;
 }
 
 a {
